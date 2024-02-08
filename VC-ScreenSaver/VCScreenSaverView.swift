@@ -6,8 +6,8 @@ class VCScreenSaverView: ScreenSaverView {
 
     var imageView = NSImageView()
 
-    var deltaX: CGFloat = 5.0
-    var deltaY: CGFloat = 5.0
+    lazy var deltaX: CGFloat = bounds.height / 100
+    lazy var deltaY: CGFloat = deltaX
     
     lazy var logoWidth = bounds.height / 5
 
