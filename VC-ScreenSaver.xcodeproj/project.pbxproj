@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9DAA73DD2AD5CBA600AC2FCC /* VC_ScreenSaverView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DAA73DC2AD5CBA600AC2FCC /* VC_ScreenSaverView.h */; };
-		9DAA73DF2AD5CBA600AC2FCC /* VC_ScreenSaverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DAA73DE2AD5CBA600AC2FCC /* VC_ScreenSaverView.m */; };
+		9D3A37AF2B74ED3A007CE783 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D3A37AE2B74ED3A007CE783 /* logo.png */; };
+		9DAA73E62AD5CFD000AC2FCC /* VCScreenSaverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAA73E52AD5CFD000AC2FCC /* VCScreenSaverView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D3A37AE2B74ED3A007CE783 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = "../../../../Downloads/Launch 2/logo.png"; sourceTree = "<group>"; };
 		9DAA73D92AD5CBA600AC2FCC /* VC-ScreenSaver.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VC-ScreenSaver.saver"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9DAA73DC2AD5CBA600AC2FCC /* VC_ScreenSaverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VC_ScreenSaverView.h; sourceTree = "<group>"; };
-		9DAA73DE2AD5CBA600AC2FCC /* VC_ScreenSaverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VC_ScreenSaverView.m; sourceTree = "<group>"; };
+		9DAA73E52AD5CFD000AC2FCC /* VCScreenSaverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCScreenSaverView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,8 +47,8 @@
 		9DAA73DB2AD5CBA600AC2FCC /* VC-ScreenSaver */ = {
 			isa = PBXGroup;
 			children = (
-				9DAA73DC2AD5CBA600AC2FCC /* VC_ScreenSaverView.h */,
-				9DAA73DE2AD5CBA600AC2FCC /* VC_ScreenSaverView.m */,
+				9DAA73E52AD5CFD000AC2FCC /* VCScreenSaverView.swift */,
+				9D3A37AE2B74ED3A007CE783 /* logo.png */,
 			);
 			path = "VC-ScreenSaver";
 			sourceTree = "<group>";
@@ -60,7 +60,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DAA73DD2AD5CBA600AC2FCC /* VC_ScreenSaverView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +95,7 @@
 				TargetAttributes = {
 					9DAA73D82AD5CBA600AC2FCC = {
 						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
 					};
 				};
 			};
@@ -122,6 +122,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D3A37AF2B74ED3A007CE783 /* logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,7 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DAA73DF2AD5CBA600AC2FCC /* VC_ScreenSaverView.m in Sources */,
+				9DAA73E62AD5CFD000AC2FCC /* VCScreenSaverView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,18 +252,21 @@
 		9DAA73E32AD5CBA600AC2FCC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TK44443MJ7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSPrincipalClass = VC_ScreenSaverView;
+				INFOPLIST_KEY_NSPrincipalClass = VC_ScreenSaver.VCScreenSaverView;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "yenting.VC-ScreenSaver";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Debug;
@@ -270,18 +274,20 @@
 		9DAA73E42AD5CBA600AC2FCC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TK44443MJ7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSPrincipalClass = VC_ScreenSaverView;
+				INFOPLIST_KEY_NSPrincipalClass = VC_ScreenSaver.VCScreenSaverView;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "yenting.VC-ScreenSaver";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Release;
