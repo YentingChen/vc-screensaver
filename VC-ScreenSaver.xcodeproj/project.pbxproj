@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9D3A37AF2B74ED3A007CE783 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D3A37AE2B74ED3A007CE783 /* logo.png */; };
+		9D37F12F2B7CF45C006F4979 /* logo-square.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D37F12E2B7CF45C006F4979 /* logo-square.png */; };
+		9D37F1312B7CF940006F4979 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D37F1302B7CF940006F4979 /* logo.png */; };
 		9DAA73E62AD5CFD000AC2FCC /* VCScreenSaverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAA73E52AD5CFD000AC2FCC /* VCScreenSaverView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9D3A37AE2B74ED3A007CE783 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = "../../../../Downloads/Launch 2/logo.png"; sourceTree = "<group>"; };
+		9D37F12E2B7CF45C006F4979 /* logo-square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-square.png"; sourceTree = "<group>"; };
+		9D37F1302B7CF940006F4979 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		9DAA73D92AD5CBA600AC2FCC /* VC-ScreenSaver.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VC-ScreenSaver.saver"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DAA73E52AD5CFD000AC2FCC /* VCScreenSaverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCScreenSaverView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,7 +50,8 @@
 			isa = PBXGroup;
 			children = (
 				9DAA73E52AD5CFD000AC2FCC /* VCScreenSaverView.swift */,
-				9D3A37AE2B74ED3A007CE783 /* logo.png */,
+				9D37F12E2B7CF45C006F4979 /* logo-square.png */,
+				9D37F1302B7CF940006F4979 /* logo.png */,
 			);
 			path = "VC-ScreenSaver";
 			sourceTree = "<group>";
@@ -122,7 +125,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D3A37AF2B74ED3A007CE783 /* logo.png in Resources */,
+				9D37F1312B7CF940006F4979 /* logo.png in Resources */,
+				9D37F12F2B7CF45C006F4979 /* logo-square.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

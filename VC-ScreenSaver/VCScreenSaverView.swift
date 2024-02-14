@@ -6,10 +6,10 @@ class VCScreenSaverView: ScreenSaverView {
 
     var imageView = NSImageView()
 
-    lazy var deltaX: CGFloat = bounds.height / 100
+    lazy var deltaX: CGFloat = 10
     lazy var deltaY: CGFloat = deltaX
     
-    lazy var logoWidth = bounds.height / 5
+    lazy var logoWidth = bounds.height / 7
 
     override init?(frame: NSRect, isPreview: Bool) {
         super.init(frame: frame, isPreview: isPreview)
@@ -47,7 +47,7 @@ class VCScreenSaverView: ScreenSaverView {
     }
     
     private func updateLogo() {
-        imageView.image = Bundle(for: type(of: self)).image(forResource: "logo")
+        imageView.image = Bundle(for: type(of: self)).image(forResource: "logo-square")
         let changingColour = colorSet[Int.random(in: 0..<colorSet.count)]
         if changingColour != NSColor.clear {
             imageView.image = imageView.image!.tintImage(with: changingColour)!
@@ -57,7 +57,7 @@ class VCScreenSaverView: ScreenSaverView {
     
     private func logoConfiguration() {
         self.imageView = NSImageView()
-        let image = Bundle(for: type(of: self)).image(forResource: "logo")
+        let image = Bundle(for: type(of: self)).image(forResource: "logo-square")
         imageView.image = image
         imageView.frame = NSRect(x: CGFloat.random(in: 0..<bounds.width - logoWidth), y: CGFloat.random(in: 0..<bounds.height - logoWidth), width: logoWidth, height: logoWidth)
         imageView.image = imageView.image!.resizedMaintainingAspectRatio(width: logoWidth, height: logoWidth)
